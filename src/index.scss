@@ -1,0 +1,21 @@
+:root {
+  // // Colors
+
+  /// Primary
+
+  --color-primary: hsl(257, 40%, 49%);
+  --color-accent: #e882e8;
+}
+html {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  position: relative;
+  background-color: var(--color-primary);
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  box-sizing: border-box;
+}

@@ -1,0 +1,76 @@
+@keyframes fade-in-bottom {
+  0%{
+      opacity: 0;
+      transform: translateY(3rem);
+  }
+  100%{
+      opacity: 1;
+      transform: translateY(0);
+  }
+  
+}
+.attribution {
+  font-size: 11px;
+  text-align: end;
+  @media only screen and (max-width:1274px) {
+   text-align: center;         
+  }
+}
+.attribution a {
+  color: hsl(309, 83%, 70%);
+}
+.social{
+  margin: 0 0 0 auto;
+  width: 8rem;
+  display: flex;
+  justify-content: space-between;
+  @media only screen and (max-width:1274px) {
+    width: 7.5rem;
+    margin: 0 auto;
+  }
+  &__border {
+    border: 2px solid white;
+    border-radius: 5rem;
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    transition: all 0.3s;
+    @media only screen and (max-width:1274px) {
+      border: 1px solid white;
+      width: 1.7rem;
+      height: 1.7rem;
+            
+    }
+    &:hover {
+      border: 2px solid var(--color-accent);
+      @media only screen and (max-width:1274px) {
+        border: 1px solid var(--color-accent);
+            
+      }
+      img {
+        filter: invert(77%) sepia(55%) saturate(1560%) hue-rotate(245deg) brightness(95%) contrast(90%);
+
+      }
+    }
+  }
+  &__icon {
+    width: .9rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(151deg) brightness(106%) contrast(104%);
+    transition: all 0.3s;
+    @media only screen and (max-width:1274px) {
+          width: .8rem;  
+    }
+  }
+}
+.footer{
+  margin-right: 5rem;
+
+  animation: fade-in-bottom 1s backwards;
+  @media only screen and (max-width:1274px) {
+    margin-top: 3rem;
+   margin-right: 0;         
+  }}
